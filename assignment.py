@@ -89,7 +89,7 @@ elif mark >=70 and mark < 80:
 	print("GRADE C")
 elif mark >=60 and mark < 70:
 	print("GRADE D")
-elif mark <= 60:
+elif mark < 60:
 	print("GRADE Fail")
 else
 	print("not valid entry")
