@@ -80,6 +80,20 @@ else:
 #
 #< 60 : Fail
 #
+mark = int(input("ENTER the MARK"))
+if mark >= 90:
+	print("GRADE A")
+elif mark >=80 and mark < 90:
+	print("GRADE B")
+elif mark >=70 and mark < 80:
+	print("GRADE C")
+elif mark >=60 and mark < 70:
+	print("GRADE D")
+elif mark <= 60:
+	print("GRADE Fail")
+else
+	print("not valid entry")
+
 #Password Strength Checker - Ask for a password and check:
 #
 #Length ≥ 8
