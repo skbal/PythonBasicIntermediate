@@ -95,23 +95,31 @@ else
 	print("not valid entry")
 
 #Password Strength Checker - Ask for a password and check:
-#
 #Length ≥ 8
-#
 #Contains both letters and numbers
-#
 #Contains at least one special character (!, @, #, etc.)
-#
+#Password Strength Checker - Ask for a password and check:
+#Length ≥ 8
+#Contains both letters and numbers
+#Contains at least one special character (!, @, #, etc.)
+
+import re
+
+passstr = str(input("enter password to check"))
+if (len(passstr) >= 8) and (re.search(r"[A-Za-z]", passstr)) and (re.search(r"\d", passstr)) and (re.search(r"[!@#$%^&*(),.?\":{}|<>]", passstr)):
+    print("strong password")
+else:
+    print("weak password")
+
+
 #Triangle Type Checker - Accept the lengths of three sides and determine whether the triangle is:
-#
 #Equilateral (all sides equal)
-#
 #Isosceles (two sides equal)
-#
 #Scalene (all sides different)
-#
 #Or invalid (violates triangle inequality rule)
-#
+
+
+
 #ATM Withdrawal Simulation - Input balance and withdrawal amount:
 #
 #If amount ≤ balance and is a multiple of 100, approve withdrawal and print remaining balance.
